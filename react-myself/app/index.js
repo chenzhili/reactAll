@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import {BrowserRouter as Router,HashRouter,Route,Switch,Redirect} from "react-router-dom";
-import {A} from "./a";
+import A from "./a";
 import {B} from "./b";
 import {Err} from "./error";
 

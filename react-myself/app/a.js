@@ -64,23 +64,24 @@ class Child extends React.Component{
         );
     }
 }
-export class A extends React.Component{
-    aa(){
-        console.log(1);
-class A extends React.Component{
+
+export default class A extends React.Component{
     constructor(){
         super();
     }
    
     render(){
         return (
-            <Card>
-                <h1>标题</h1>
-                <div>姓名
-                    <div>age</div>
-                </div>
-            </Card>
-            <Child n="2"/>
-        );
+            <div>
+                <Card>
+                    <h1>标题</h1>
+                    <div>姓名
+                        <div>age</div>
+                    </div>
+                </Card>
+                <Child n="2"/>
+            </div>
+        )
     }
 }
+// export {A};
