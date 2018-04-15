@@ -34,3 +34,10 @@ js本身
     1、分清楚 es6的模块 和 common.js 的模块导入的区别
         es6 用的  import 和 export
         common.js module.exports(exports) 和 require
+
+
+2018/3/29
+    1、对于 setState 的用法中，注意： setSate是一个异步操作
+        并不会马上修改 state。而是把这个对象放到一个更新队列里面，稍后才会从队列当中把新的状态提取出来合并到 state 当中，然后再触发组件更新
+        所以其实 setState 接受两种方式进行状态的更新，直接修改的对象、接受一个 函数；
+        接受一个函数作为参数。React.js 会把上一个 setState 的结果传入这个函数
