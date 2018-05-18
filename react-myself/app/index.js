@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import {BrowserRouter as Router,HashRouter,Route,Switch,Redirect} from "react-router-dom";
 import A from "./a";
-import {B} from "./b";
+import B from "./b";
 import {Err} from "./error";
 
 import {Nav} from "./nav";
@@ -11,7 +11,7 @@ import {Nav} from "./nav";
 import "./index.css";
 
 ReactDOM.render(
-    <HashRouter basename="demo" forceRefresh={true}> 
+    <HashRouter forceRefresh={true}> 
         <div>
         <Nav/>
         <Switch>
